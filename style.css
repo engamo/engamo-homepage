@@ -47,3 +47,15 @@ img {
   width: 99.5%;
   overflow: auto;
 }
+.services {
+  display: flex;
+  gap: 20px;
+}
+.design-container {
+  display: flex;
+  gap: 20px;
+}
+.design-img {
+  width: 300px;
+  border-radius: 24px;
+}
