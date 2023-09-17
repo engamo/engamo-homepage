@@ -55,7 +55,15 @@ img {
   display: flex;
   gap: 20px;
 }
+.team-images {
+  display: flex;
+  gap: 20px;
+}
 .design-img {
   width: 300px;
   border-radius: 24px;
+}
+.recom-profile {
+  display: flex;
+  gap: 20px;
 }
