@@ -66,6 +66,38 @@ nav ul li{
   font-size: 14px;
   font-weight: 500;
 }
+.input-button {
+  position: relative;
+  width: 350px;
+  height: 57px;
+}
+.input {
+  border-radius: 12px;
+  background: #F2F2F2;
+  width: 350px;
+  height: 57px;
+  border: none;
+}
+.input::placeholder {
+  color: #BDBDBD;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.button {
+  position: absolute;
+  right: 2%;
+  top: 9%;
+  border-radius: 12px;
+  background: #2D9CDB;
+  padding: 0.5rem;
+  color: var(--Gray-6, #F2F2F2);
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+}
 img {
   width: 99.5%;
   overflow: auto;
