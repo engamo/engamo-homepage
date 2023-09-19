@@ -189,9 +189,8 @@ nav ul li {
   gap: 20px;
 }
 .design-img {
-  width: 450px;
+  width: 534px;
   border-radius: 24px;
-  height: 534px;
 }
 .stack {
   color:#828282;
@@ -216,4 +215,32 @@ nav ul li {
   font-size: 24px;
   font-weight: 500;
   margin-left: 850px;
+}
+.team-section {
+  margin: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+.team-header {
+  color: #EB5757;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 500;
+}
+.team-sub-header {
+  color:#333;
+  font-family: 'Poppins';
+  font-size: 36px;
+  font-weight: 500;
+}
+.team-text {
+  color: #4F4F4F;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 400;
+  width: 273px;
+}
+team-img {
+  width: 300px;
+  border-radius: 24px;
 }
