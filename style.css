@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  margin: 20px;
+  font-family: 'poppins';
 }
 .grid-container {
   display: grid;
@@ -16,9 +16,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  margin-left: 40px;
+  margin-right: 40px;
 }
-nav ul li{
+nav ul li {
   display: inline-block;
   padding: 20px;
   color: #333;
@@ -31,15 +32,22 @@ nav ul li{
   font-size: 36px;
   font-weight: 800;
 }
+.hero-image {
+  width: 1332px;
+  height: 354px;
+  border-radius: 18px;
+  margin-left: 20px;
+  background: url(images/heroImage.jpg), lightgray 50% / cover no-repeat;
+}
 .hero-sub-section1 {
-  margin-left: 10em;
-  margin-top: 4em;
-  margin-bottom: 2em;
+  margin-left: 20rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 .hero-sub-section2 {
-  margin-left: 10em;
-  margin-top: 2em;
-  margin-bottom: 6em;
+  margin-left: 20rem;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
 }
 .header1 {
   color: #2D9CDB;
@@ -58,7 +66,7 @@ nav ul li{
   font-family: 'Poppins';
   font-size: 18px;
   font-weight: 400;
-  margin: 2em 0;
+  margin: 2rem 0;
 }
 .button-header {
   color:#828282;
@@ -120,10 +128,6 @@ nav ul li{
 .icon {
   color: #fff;
 }
-img {
-  width: 99.5%;
-  overflow: auto;
-}
 .services-section {
   margin: 10rem;
 }
@@ -142,8 +146,9 @@ img {
   margin: 1.5rem 0;
 }
 .sub-services {
+  margin-left: 2rem;
   display: flex;
-  gap: 20px;
+  gap: 100px;
 }
 .service-text {
   width: 273px;
@@ -151,6 +156,9 @@ img {
   font-family: 'Poppins';
   font-size: 16px;
   font-weight: 400;
+}
+.design--section {
+  margin: 10rem;
 }
 .getStarted {
   border-radius: 12px;
@@ -169,18 +177,43 @@ img {
 }
 
 .design-container {
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px;
+}
+.design-box {
+  margin-bottom: 100px;
 }
 .team-images {
   display: flex;
   gap: 20px;
 }
 .design-img {
-  width: 300px;
+  width: 450px;
   border-radius: 24px;
+  height: 534px;
+}
+.stack {
+  color:#828282;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 300;
+  margin: 5px 0;
+}
+.stack-text {
+  color:#333;
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: 500;
 }
 .recom-profile {
   display: flex;
   gap: 20px;
+}
+.see-more {
+  color: #2D9CDB;
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 850px;
 }
