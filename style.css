@@ -29,6 +29,9 @@ ul li {
   font-weight: 500;
   list-style: none;
 }
+.menu {
+  display: none;
+}
 
 .hero-image {
   max-width: 1300px;
@@ -76,13 +79,13 @@ ul li {
 }
 .input-button {
   position: relative;
-  width: 350px;
+  width: 354px;
   height: 57px;
 }
 .input {
   border-radius: 12px;
   background: #F2F2F2;
-  width: 350px;
+  width: 100%;
   height: 57px;
   border: none;
 }
@@ -147,6 +150,7 @@ ul li {
 .sub-services {
   margin-top: 4rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 50px;
 }
 .sub-services-item {
@@ -183,7 +187,7 @@ ul li {
 
 .design-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   gap: 10px;
 }
 .design-box2 {
@@ -194,6 +198,60 @@ ul li {
  grid-template-columns: repeat(4, 1fr);
  grid-template-rows: repeat(4, 1fr);
  grid-gap: 20px;
+}
+@media (max-width: 800px) {
+  .design-container {
+    grid-template-columns: auto;
+    gap: 50px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+  .design-box2 {
+    margin-top: 0;
+  }
+  .see-more {
+    justify-content: start;
+    margin: 0;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+    padding-left: 40px;
+    padding-bottom: 100px;
+    padding-top: 10px;
+    width: 100vw;
+    height: 100vh;
+  }
+  .input-button {
+    position: relative;
+    width: 291px;
+    height: 47px;
+  }
+  .menu {
+    display: inline;
+    width: 24px;
+    height: 24px;
+  }
+  .nav-links {
+    display: none;
+  }
+  
+}
+@media (max-width: 1200px) {
+  .team-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+}
+.item img {
+  width: 100%;
 }
 .item1 {
   grid-column: span 2;
@@ -243,10 +301,11 @@ ul li {
   margin-left: 10px;
 }
 .team-section {
-  margin: 10rem;
+  margin: 160px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 .team-header {
   color: #EB5757;
@@ -293,10 +352,11 @@ footer {
   padding-bottom: 20px;
 }
 .footer-container {
-  
   display: flex;
   justify-content: space-around;
   align-items: start;
+  width: 100%;
+  height: 100%;
 }
 .footer-links {
   color: #FFF;
@@ -313,7 +373,7 @@ footer {
   margin-right: 5px;
 }
 .engamo {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 28px;
   font-weight: 800px;
 }
