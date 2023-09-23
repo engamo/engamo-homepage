@@ -1,14 +1,12 @@
-const mainMenu = document.querySelector('.mainMenu');
-const closeMenu = document.querySelector('.closeMenu');
-const openMenu = document.querySelector('.openMenu');
-openMenu.addEventListener('click', show);
-closeMenu.addEventListener('click', close);
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
 
-function show() {
-    mainMenu.style.display = 'flex';
-    mainMenu.style.top = '0';
-}
-function close() {
-    mainMenu.style.top = '-100%';
-}
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
 
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}));
